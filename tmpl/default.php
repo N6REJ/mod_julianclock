@@ -21,11 +21,8 @@ if($moduleSuffix){ echo 'class=" ' . $moduleSuffix . '"'; } ?>">&nbsp;
 <!-- END LAYOUT -->
 <script type="text/javascript" >
     var currentTime_<?php echo $moduleTitle; ?> = new Date("<?php echo $time; ?>");
-    var jstime_<?php echo $moduleTitle; ?> = new Date().getTime() - 1000;
     function julianclockUpdate_<?php echo $moduleTitle; ?>()
     {
-
-       
         // Update the time display
         document.getElementById("julianclockTime_<?php echo $moduleTitle; ?>").innerHTML = currentTimeString_<?php echo $moduleTitle; ?>;
     }
