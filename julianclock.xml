@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <extension type="module" version="3.0" client="site" method="upgrade">
-	<name>JowJulianClock</name>
+	<name>Julian Clock</name>
 	<author>Troy T. Hall</author>
 	<creationDate>04-23-2016</creationDate>
 	<copyright>JowWow</copyright>
@@ -8,23 +8,32 @@
 	<authorEmail>support@jowwow.net</authorEmail>
 	<authorUrl>http://jowwow.net</authorUrl>
 	<version>1.0</version>
-	<description></description>
+	<description>A simple Julian Clock for Astronomers</description>
 	<files>
-		<filename module="mod_jowjulianclock">mod_jowjulianclock.php</filename>
+		<filename module="mod_julianclock">mod_julianclock.php</filename>
 		<filename>helper.php</filename>
-		<filename>mod_jowjulianclock.xml</filename>
+		<filename>mod_julianclock.xml</filename>
 		<folder>tmpl</folder>	
 		<folder>css</folder>
 	</files>
+	<updateservers>
+		<server
+			type="extension"
+			name="julianClock"
+			priority="1"
+		>
+			https://raw.githubusercontent.com/N6REJ/mod_julianclock/master/julianclock.xml
+		</server>
+	</updateservers>
 	<config>
 		<fields name="params">
 			<fieldset name="basic">
 				<field
-				name="layout"
-				type="radio"
-				class="btn-group btn-group-yesno"
-				default="horz"
-				label="Use horizontal layout?"
+					name="layout"
+					type="radio"
+					class="btn-group btn-group-yesno"
+					default="horz"
+					label="Use horizontal layout?"
 				>
 					<option value="horz">JYES</option>
 					<option value="vert">JNO</option>

@@ -1,6 +1,6 @@
 <?php
 /**
- * @package JowJulianClock for Joomla 3.0
+ * @package julianClock for Joomla 3.0
  * @version 1.0
  * @author Troy T. Hall (http://jowwow.net)
  * @copyright (C) 2016 JowWow
@@ -9,7 +9,7 @@
 
 defined( '_JEXEC' ) or die( 'Restricted access' );
 
-class modJowJulianClockHelper
+class modjulianClockHelper
 {   
     public static function getTime( $params )
     {
