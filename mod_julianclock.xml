@@ -26,25 +26,6 @@
 		</server>
 	</updateservers>
 	<config>
-		<fields name="params">
-			<fieldset name="basic">
-				<field
-					name="layout"
-					type="radio"
-					class="btn-group btn-group-yesno"
-					default="horz"
-					label="Use horizontal layout?"
-				>
-					<option value="horz">JYES</option>
-					<option value="vert">JNO</option>
-				</field>				
-				<field
-					name="moduleclass_sfx"
-					type="text"
-					label="COM_MODULES_FIELD_MODULECLASS_SFX_LABEL"
-					description="COM_MODULES_FIELD_MODULECLASS_SFX_DESC"
-				/>
-			</fieldset>
-		</fields>
+	
 	</config>
 </extension>

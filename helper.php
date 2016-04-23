@@ -9,7 +9,7 @@
 
 defined( '_JEXEC' ) or die( 'Restricted access' );
 
-class modjulianClockHelper
+class modJulianClockHelper
 {   
     public static function getTime( $params )
     {
