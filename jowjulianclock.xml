@@ -10,38 +10,31 @@
 	<version>1.0</version>
 	<description></description>
 	<files>
-		<filename module="mod_jowclock">index.html</filename>
-		<filename module="mod_jowclock">mod_jowclock.php</filename>
-		<filename module="mod_jowclock">helper.php</filename>
-		<filename module="mod_jowclock">mod_jowclock.xml</filename>
-		<filename module="mod_jowclock">license.txt</filename>
+		<filename module="mod_jowjulianclock">mod_jowjulianclock.php</filename>
+		<filename>helper.php</filename>
+		<filename>mod_jowjulianclock.xml</filename>
 		<folder>tmpl</folder>	
 		<folder>css</folder>
 	</files>
-	<languages>
-    </languages>
 	<config>
 		<fields name="params">
 			<fieldset name="basic">
-				<field name="layout" type="list" default="horz" label="Use horizontal layout?">
-					<option value="horz">Yes</option>
-					<option value="vert">No</option>
-				</field>
-				<field name="daytype" type="list" default="short" label="Use short day names?">
-					<option value="short">Yes</option>
-					<option value="long">No</option>
-				</field>
-				<field name="monthtype" type="list" default="short" label="Use short month names?">
-					<option value="short">Yes</option>
-					<option value="long">No</option>
+				<field
+				name="layout"
+				type="radio"
+				class="btn-group btn-group-yesno"
+				default="horz"
+				label="Use horizontal layout?"
+				>
+					<option value="horz">JYES</option>
+					<option value="vert">JNO</option>
 				</field>				
-			</fieldset>
-			<fieldset name="advanced">
-				<field name="moduleclass_sfx" type="text" label="COM_MODULES_FIELD_MODULECLASS_SFX_LABEL" description="COM_MODULES_FIELD_MODULECLASS_SFX_DESC" />
-				<field name="cache" type="list" default="0" label="COM_MODULES_FIELD_CACHING_LABEL" description="COM_MODULES_FIELD_CACHING_DESC">
-					<option value="1">JGLOBAL_USE_GLOBAL</option>
-					<option value="0">COM_MODULES_FIELD_VALUE_NOCACHING</option>
-				</field>
+				<field
+					name="moduleclass_sfx"
+					type="text"
+					label="COM_MODULES_FIELD_MODULECLASS_SFX_LABEL"
+					description="COM_MODULES_FIELD_MODULECLASS_SFX_DESC"
+				/>
 			</fieldset>
 		</fields>
 	</config>
