@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="module" version="3.0" client="site" method="upgrade">
+	<name>JowJulianClock</name>
+	<author>Troy T. Hall</author>
+	<creationDate>04-23-2016</creationDate>
+	<copyright>JowWow</copyright>
+	<license>GNU General Public License v3. https://www.gnu.org/licenses/gpl.html</license>
+	<authorEmail>support@jowwow.net</authorEmail>
+	<authorUrl>http://jowwow.net</authorUrl>
+	<version>1.0</version>
+	<description></description>
+	<files>
+		<filename module="mod_jowclock">index.html</filename>
+		<filename module="mod_jowclock">mod_jowclock.php</filename>
+		<filename module="mod_jowclock">helper.php</filename>
+		<filename module="mod_jowclock">mod_jowclock.xml</filename>
+		<filename module="mod_jowclock">license.txt</filename>
+		<folder>tmpl</folder>	
+		<folder>css</folder>
+	</files>
+	<languages>
+    </languages>
+	<config>
+		<fields name="params">
+			<fieldset name="basic">
+				<field name="layout" type="list" default="horz" label="Use horizontal layout?">
+					<option value="horz">Yes</option>
+					<option value="vert">No</option>
+				</field>
+				<field name="daytype" type="list" default="short" label="Use short day names?">
+					<option value="short">Yes</option>
+					<option value="long">No</option>
+				</field>
+				<field name="monthtype" type="list" default="short" label="Use short month names?">
+					<option value="short">Yes</option>
+					<option value="long">No</option>
+				</field>				
+			</fieldset>
+			<fieldset name="advanced">
+				<field name="moduleclass_sfx" type="text" label="COM_MODULES_FIELD_MODULECLASS_SFX_LABEL" description="COM_MODULES_FIELD_MODULECLASS_SFX_DESC" />
+				<field name="cache" type="list" default="0" label="COM_MODULES_FIELD_CACHING_LABEL" description="COM_MODULES_FIELD_CACHING_DESC">
+					<option value="1">JGLOBAL_USE_GLOBAL</option>
+					<option value="0">COM_MODULES_FIELD_VALUE_NOCACHING</option>
+				</field>
+			</fieldset>
+		</fields>
+	</config>
+</extension>
