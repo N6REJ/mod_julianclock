@@ -15,16 +15,24 @@ $moduleTitle = preg_replace('/[^a-z0-9]/i', '_', $moduleTitle);
 $moduleSuffix = $params->get('moduleclass_sfx');
 ?>
 <!-- BEGIN LAYOUT -->
-<p  onload="julianclockUpdate_<?php echo $moduleTitle;?>()"></p>
+
 <div id="<?php echo "julianclock_" . $moduleTitle . '"';
-if($moduleSuffix){ echo 'class=" ' . $moduleSuffix . '"'; } ?>"></div>
+if ($moduleSuffix) {
+	echo 'class=" ' . $moduleSuffix . '">';
+} else { echo ">" ;}
+?>
+</div>
 <!-- END LAYOUT -->
 <script type="text/javascript" >
-    function julianclockUpdate_<?php echo $moduleTitle; ?>()
-    {
-        // Update the time display
-        document.getElementById("julianclock_<?php echo $moduleTitle; ?>").innerHTML = <?php echo $julianDate; ?>;
-var t = setTimeout(julianclockUpdate_<?php echo $moduleTitle; ?>,500);
-}
+	function julianclockUpdate_<?php echo $moduleTitle; ?>()
+	{
+		jQuery("#julianclock_<?php echo $moduleTitle; ?>").html(<?php echo $julianDate; ?>);
+	}
+
+	// Update the time display
+	jQuery(document).ready(function ()
+	{
+		setInterval('julianclockUpdate_<?php echo $moduleTitle; ?>()', 1000);
+	});
 
 </script>
