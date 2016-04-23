@@ -15,5 +15,5 @@ require_once( dirname(__FILE__) . '/helper.php' );
 // Get default .css file
 $document = JFactory::getDocument();
 $document->addStyleSheet(JURI::base() . 'modules/mod_julianclock/css/mod_julianclock.css');
-$time = modJulianClockHelper::getTime($params);
+$julianDate = modJulianClockHelper::getTime($params);
 require( JModuleHelper::getLayoutPath('mod_julianclock') );
