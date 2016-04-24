@@ -13,8 +13,8 @@
 		<filename module="mod_julianclock">mod_julianclock.php</filename>
 		<filename>helper.php</filename>
 		<filename>mod_julianclock.xml</filename>
-		<folder>tmpl</folder>	
-		<folder>css</folder>
+		<folder>tmpl</folder>
+		<folder>language</folder>
 	</files>
 	<updateservers>
 		<server
@@ -34,16 +34,16 @@
 					class=""
 					filter="string"
 					default="Julian Date"
-					label="Clock text"
-					description="This text will appear after the time.  Include spaces as desired"
+					label="MOD_JULIANCLOCK_CLOCK_TEXT_LABEL"
+					description="MOD_JULIANCLOCK_CLOCK_TEXT_DESC"
 				/>
 				<field
 					name="positionText"
 					type="radio"
 					class="btn-group"
 					default="0"
-					label="Show Text before Date?"
-					description="Will the text entered be shown before or after the time?"
+					label="MOD_JULIANCLOCK_POSITION_TEXT_LABEL"
+					description="MOD_JULIANCLOCK_POSTION_TEXT_DESC"
 				>			
 					<option value="1">JYES</option>
 					<option value="0">JNO</option>
@@ -54,8 +54,8 @@
 					class=""
 					filter="int"
 					default="1000"
-					label="Update Interval"
-					description="How often would you like the clock to update? -  NOTE: Value is in milliseconds, there are 1000 milliseconds in a second?"
+					label="MOD_JULIANCLOCK_UPDATE_INTERVAL_LABEL"
+					description="MOD_JULIANCLOCK_UPDATE_INTERVAL_DESC"
 				/>
 			</fieldset>
 			<fieldset name="advanced">		
