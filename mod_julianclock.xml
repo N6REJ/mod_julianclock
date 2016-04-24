@@ -33,7 +33,7 @@
 					type="text"
 					class=""
 					filter="string"
-					default=" Julian Date"
+					default="Julian Date"
 					label="Clock text"
 					description="This text will appear after the time.  Include spaces as desired"
 				/>
@@ -48,6 +48,15 @@
 					<option value="1">JYES</option>
 					<option value="0">JNO</option>
 				</field>
+				<field
+					name="updateInterval"
+					type="text"
+					class=""
+					filter="int"
+					default="1000"
+					label="Update Interval"
+					description="How often would you like the clock to update? -  NOTE: Value is in milliseconds, there are 1000 milliseconds in a second?"
+				/>
 			</fieldset>
 			<fieldset name="advanced">		
 				<field
