@@ -36,7 +36,18 @@
 					default=" Julian Date"
 					label="Clock text"
 					description="This text will appear after the time.  Include spaces as desired"
-				/>				
+				/>
+				<field
+					name="positionText"
+					type="radio"
+					class="btn-group btn-group-yesno"
+					default="0"
+					label="Show Text before Date?"
+					description="Will the text entered be shown before or after the time?"
+				>			
+					<option value="1">JYES</option>
+					<option value="0">JNO</option>
+				</field>
 			</fieldset>
 			<fieldset name="advanced">		
 				<field

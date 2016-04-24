@@ -16,23 +16,30 @@ $moduleSuffix = $params->get('moduleclass_sfx');
 ?>
 <!-- BEGIN LAYOUT -->
 
-<div id="<?php echo "julianclock_" . $moduleTitle . '"';
+<div class="<?php
+echo "julianclock_" . $moduleTitle . '"';
 if ($moduleSuffix) {
 	echo 'class=" ' . $moduleSuffix . '">';
-} else { echo ">" ;}
+} else {
+	echo ">";
+}
 ?>
-</div>
-<!-- END LAYOUT -->
-<script type="text/javascript" >
-	function julianclockUpdate_<?php echo $moduleTitle; ?>()
-	{
-		jQuery("#julianclock_<?php echo $moduleTitle; ?>").html(<?php echo $julianDate; ?>).append('<?php echo $params->get('clockText');?>');
-	}
+	 </div>
+	 <!-- END LAYOUT -->
+	 <script type="text/javascript" >
+	 function julianclockUpdate_<?php echo $moduleTitle; ?>()
+	 {
+	 if(<?php echo $params->get('positionText'); ?>) {
+		jQuery(".julianclock_<?php echo $moduleTitle; ?>").html(<?php echo $julianDate; ?>).prepend('<?php echo $params->get('clockText'); ?> ');
+	 } else	 {
+		jQuery(".julianclock_<?php echo $moduleTitle; ?>").html(<?php echo $julianDate; ?>).append(' <?php echo $params->get('clockText'); ?>');
+	 }
+	 }
 
-	// Update the time display
-	jQuery(document).ready(function ()
-	{
-		setInterval('julianclockUpdate_<?php echo $moduleTitle; ?>()', 1000);
-	});
+	 // Update the time display
+	 jQuery(document).ready(function ()
+	 {
+	 setInterval('julianclockUpdate_<?php echo $moduleTitle; ?>()', 1000);
+	 });
 
 </script>
