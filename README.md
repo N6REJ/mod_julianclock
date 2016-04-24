@@ -1,7 +1,6 @@
 JulianClock
 ========
-A live-clock based on Javascript and PHP.
-By using PHP together with Javascript this clock will display the Julian Date
-as used by Astronomers.
+A live-clock based on Javascript for Joomla 3.
+while this may run on Joomla 2.5 no support is given for such.
 
 Source Time is fixed on UTC
