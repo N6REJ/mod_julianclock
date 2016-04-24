@@ -7,7 +7,7 @@
 	<license>GNU General Public License v3. https://www.gnu.org/licenses/gpl.html</license>
 	<authorEmail>support@jowwow.net</authorEmail>
 	<authorUrl>http://jowwow.net</authorUrl>
-	<version>1.0</version>
+	<version>1.2</version>
 	<description>A simple Julian Clock for Astronomers</description>
 	<files>
 		<filename module="mod_julianclock">mod_julianclock.php</filename>
@@ -26,6 +26,26 @@
 		</server>
 	</updateservers>
 	<config>
-	
+		<fields name="params">
+			<fieldset name="basic">
+				<field
+					name="clockText"
+					type="text"
+					class=""
+					filter="string"
+					default=" Julian Date"
+					label="Clock text"
+					description="This text will appear after the time.  Include spaces as desired"
+				/>				
+			</fieldset>
+			<fieldset name="advanced">		
+				<field
+					name="moduleclass_sfx"
+					type="text"
+					label="COM_MODULES_FIELD_MODULECLASS_SFX_LABEL"
+					description="COM_MODULES_FIELD_MODULECLASS_SFX_DESC"
+				/>
+			</fieldset>
+		</fields>
 	</config>
 </extension>

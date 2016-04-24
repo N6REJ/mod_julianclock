@@ -26,13 +26,13 @@ if ($moduleSuffix) {
 <script type="text/javascript" >
 	function julianclockUpdate_<?php echo $moduleTitle; ?>()
 	{
-		jQuery("#julianclock_<?php echo $moduleTitle; ?>").html(<?php echo $julianDate; ?>).append(' JD');
+		jQuery("#julianclock_<?php echo $moduleTitle; ?>").html(<?php echo $julianDate; ?>).append('<?php echo $params->get('clockText');?>');
 	}
 
 	// Update the time display
 	jQuery(document).ready(function ()
 	{
-		setInterval('julianclockUpdate_<?php echo $moduleTitle; ?>(<?php echo $julianDate;?>)', 1000);
+		setInterval('julianclockUpdate_<?php echo $moduleTitle; ?>()', 1000);
 	});
 
 </script>
