@@ -13,19 +13,16 @@ $moduleTitle = $module->title;
 $moduleTitle = strtolower($moduleTitle);
 $moduleTitle = preg_replace('/[^a-z0-9]/i', '_', $moduleTitle);
 $moduleSuffix = $params->get('moduleclass_sfx');
+
+// Construct the CSS class string.
+$baseClass = 'julianclock_' . $moduleTitle;
+$classes = $baseClass . ($moduleSuffix ? ' ' . $baseClass . $moduleSuffix : '');
 ?>
 <!-- BEGIN LAYOUT -->
+	<div class="<?php echo $classes; ?>">
+	</div>
+<!-- END LAYOUT -->
 
-<div class="<?php
-echo "julianclock_" . $moduleTitle . '"';
-if ($moduleSuffix) {
-	echo 'class=" ' . $moduleSuffix . '">';
-} else {
-	echo ">";
-}
-?>
-	 </div>
-	 <!-- END LAYOUT -->
 	 <!-- formula derived from https://en.wikipedia.org/wiki/Julian_day -->
 	 <script type="text/javascript" >
 
