@@ -1,7 +1,7 @@
 <updates>
 	<update>
 		<name>Julian Clock</name>
-		<description>This is Julian Clock 1.2</description>
+		<description>This is Julian Clock 1.4</description>
 		<element>mod_julianclock</element>
 		<type>module</type>
 		<version>1.5</version>
