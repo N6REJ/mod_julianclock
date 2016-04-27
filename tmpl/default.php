@@ -15,8 +15,9 @@ $moduleTitle = preg_replace('/[^a-z0-9]/i', '_', $moduleTitle);
 $moduleSuffix = $params->get('moduleclass_sfx');
 
 // Construct the CSS class string.
-$baseClass = 'julianclock_' . $moduleTitle;
+$baseClass = 'jdate_' . $moduleTitle;
 $classes = $baseClass . ($moduleSuffix ? ' ' . $baseClass . $moduleSuffix : '');
+
 ?>
 <!-- BEGIN LAYOUT -->
 	<div class="<?php echo $classes; ?>">
@@ -26,7 +27,7 @@ $classes = $baseClass . ($moduleSuffix ? ' ' . $baseClass . $moduleSuffix : '');
 	 <!-- formula derived from https://en.wikipedia.org/wiki/Julian_day -->
 	 <script type="text/javascript" >
 
-	 function getJulian_<?php echo $moduleTitle; ?>()
+	 function getJulian_<?php echo $classes; ?>()
 	 {
 	 var now = new Date();
 	 var day = now.getUTCDate();
@@ -42,16 +43,17 @@ $classes = $baseClass . ($moduleSuffix ? ' ' . $baseClass . $moduleSuffix : '');
 	 var JulianDate = JDN + ((hours - 12) / 24) + (minutes / 1440) + (seconds/86400);
 
 	 if(<?php echo $params->get('positionText'); ?> == 1) {
-	 jQuery(".julianclock_<?php echo $moduleTitle; ?>").html(JulianDate).prepend('<?php echo $params->get('clockText'); ?> ');
+	 jQuery(".<?php echo $classes; ?>").html(JulianDate).prepend('<?php echo $params->get('clockText'); ?> ');
 	 } else	 {
-	 jQuery(".julianclock_<?php echo $moduleTitle; ?>").html(JulianDate).append(' <?php echo $params->get('clockText'); ?>');
+	 jQuery(".<?php echo $classes; ?>").html(JulianDate).append(' <?php echo $params->get('clockText'); ?>');
 	 }
 	 }
 
 	 // Update the time display
 	 jQuery(document).ready(function ()
 	 {
-	 setInterval(getJulian_<?php echo $moduleTitle; ?>, <?php echo $params->get('updateInterval'); ?>);
+		 getJulian_<?php echo $classes; ?>();
+	 setInterval(getJulian_<?php echo $classes; ?>, <?php echo $params->get('updateInterval'); ?>);
 	 });
 
 </script>
