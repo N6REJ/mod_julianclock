@@ -1,7 +1,7 @@
 <?php
 /**
  * @package jdate for Joomla 3.0
- * @version 1.5
+ * @version 1.6
  * @author Troy T. Hall (http://jowwow.me)
  * @copyright (C) 2013 JowWow
  * @license GNU/GPLv3 http://www.gnu.org/licenses/gpl-3.0.html
@@ -50,7 +50,7 @@ $classes = $baseClass . ($moduleSuffix ? ' ' . $moduleSuffix : ' ');
 		var y = year + 4800 - a;
 		var m = month + (12 * a) - 3;
 		var JDN = day + Math.floor(((153 * m) + 2) / 5) + (365 * y) + Math.floor(y / 4) - Math.floor(y / 100) + Math.floor(y / 400) - 32045;
-		var JulianDate = JDN + ((hours - 12) / 24) + (minutes / 1440) + (seconds / 86400);
+		var JulianDate = (JDN + ((hours - 12) / 24) + (minutes / 1440) + (seconds / 86400)).toFixed(<?php echo $params->get('precision');?>);
 
 		jQuery(".jdate_<?php echo $moduleTitle; ?>").html('<?php echo $preText; ?>' + JulianDate + '<?php echo $postText; ?>');
 	}

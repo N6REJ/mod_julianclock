@@ -56,6 +56,15 @@
 					label="MOD_JULIANCLOCK_UPDATE_INTERVAL_LABEL"
 					description="MOD_JULIANCLOCK_UPDATE_INTERVAL_DESC"
 				/>
+				<field name="precision"
+					   type="integer"
+					   last="10"
+					   first="0"
+					   step="1"
+					   default="5"
+					   label="MOD_JULIANCLOCK_PRECISION_LABEL"
+					   description="MOD_JULIANCLOCK_PRECISION_LABEL"
+				/>
 				<field
 					name="icon"
 					type="text"
