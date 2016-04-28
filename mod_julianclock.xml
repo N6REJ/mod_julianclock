@@ -7,7 +7,7 @@
 	<license>GNU General Public License v3. https://www.gnu.org/licenses/gpl.html</license>
 	<authorEmail>support@jowwow.net</authorEmail>
 	<authorUrl>http://jowwow.net</authorUrl>
-	<version>1.5</version>
+	<version>1.6</version>
 	<description>A simple Julian Clock for Astronomers</description>
 	<files>
 		<filename module="mod_julianclock">mod_julianclock.php</filename>
@@ -55,6 +55,15 @@
 					default="1000"
 					label="MOD_JULIANCLOCK_UPDATE_INTERVAL_LABEL"
 					description="MOD_JULIANCLOCK_UPDATE_INTERVAL_DESC"
+				/>
+				<field
+					name="icon"
+					type="text"
+					class=""
+					filter="string"
+					default=""
+					label="MOD_JULIANCLOCK_ICON_LABEL"
+					description="MOD_JULIANCLOCK_ICON_DESC"
 				/>
 			</fieldset>
 			<fieldset name="advanced">		

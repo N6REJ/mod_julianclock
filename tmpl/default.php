@@ -13,13 +13,14 @@ $moduleTitle = $module->title;
 $moduleTitle = strtolower($moduleTitle);
 $moduleTitle = preg_replace('/[^a-z0-9]/i', '_', $moduleTitle);
 $moduleSuffix = $params->get('moduleclass_sfx');
+$icon = '<span class="' . $params->get('icon') . '"></span>';
 
 /* lets set the text for pre and post time */
 if ($params->get('position')) {
-	$preText = $params->get('clockText') . " ";
+	$preText = $icon . $params->get('clockText') . " ";
 	$postText = '';
 } else {
-	$postText = $params->get('clockText') . " ";
+	$postText = " " . $params->get('clockText');
 	$preText = '';
 }
 

@@ -1,12 +1,12 @@
 <updates>
 	<update>
 		<name>Julian Clock</name>
-		<description>This is Julian Clock 1.4</description>
+		<description>This is Julian Clock 1.6</description>
 		<element>mod_julianclock</element>
 		<type>module</type>
-		<version>1.5</version>
+		<version>1.6</version>
 		<downloads>
-			<downloadurl type="full" format="zip">https://github.com/N6REJ/mod_julianclock/releases/download/1.5/mod_julianclock-1.5.zip</downloadurl>
+			<downloadurl type="full" format="zip">https://github.com/N6REJ/mod_julianclock/releases/download/1.6/mod_julianclock-1.5.zip</downloadurl>
 		</downloads>
 		<maintainer>JowWow</maintainer>
 		<maintainerurl>http://www.jowwow.net</maintainerurl>
