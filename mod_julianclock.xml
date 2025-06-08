@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
-<extension type="module" version="3.0" client="site" method="upgrade">
+<extension type="module" version="5.0" client="site" method="upgrade">
 	<name>Julian Clock</name>
-	<author>Troy T. Hall</author>
+	<author>N6REJ</author>
 	<creationDate>04-23-2016</creationDate>
 	<copyright>JowWow</copyright>
 	<license>GNU General Public License v3. https://www.gnu.org/licenses/gpl.html</license>
-	<authorEmail>support@jowwow.net</authorEmail>
-	<authorUrl>http://jowwow.net</authorUrl>
-	<version>1.6</version>
-	<description>A simple Julian Clock for Astronomers</description>
+	<authorEmail>troy@hallhome.us</authorEmail>
+	<authorUrl>https://hallhome.us</authorUrl>
+	<version>2025.06.05.3</version>
+	<description>MOD_JULIANCLOCK_XML_DESCRIPTION</description>
 	<files>
 		<filename module="mod_julianclock">mod_julianclock.php</filename>
 		<filename>mod_julianclock.xml</filename>

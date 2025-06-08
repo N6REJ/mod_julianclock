@@ -1,12 +1,24 @@
 <?php
 /**
- * @package jdate for Joomla 3.0
- * @version 1.6
- * @author Troy T. Hall (http://jowwow.me)
- * @copyright (C) 2013 JowWow
- * @license GNU/GPLv3 http://www.gnu.org/licenses/gpl-3.0.html
- * */
+ * Bears Julian Clock
+ * @version 2025.06.05.3 
+ * @package mod_julianclock
+ * @author N6REJ 
+ * @email troy@hallhome.us 
+ * @website https://www.hallhome.us 
+ * @copyright Copyright (c) 2025 N6REJ 
+ * @license GNU General Public License version 3 or later; see LICENSE.txt 
+ * @since 2025.5.10
+ *
+ * @var array $displayData Contains the variables passed from the module entry file
+ */
 defined('_JEXEC') or die('Direct Access to this location is not allowed.');
+
+// Joomla 5: Use $displayData['module'] and $displayData['params']
+$module = $displayData['module'];
+$params = $displayData['params'];
+/** @var Joomla\CMS\Module\Module $module */
+/** @var Joomla\Registry\Registry $params */
 
 /* we need some basic parameters */
 $moduleTitle = $module->title;
@@ -39,28 +51,30 @@ $classes = $baseClass . ($moduleSuffix ? ' ' . $moduleSuffix : ' ');
 
 	function getJulian_<?php echo $moduleTitle; ?>()
 	{
-		var now = new Date();
-		var day = now.getUTCDate();
-		var month = now.getUTCMonth() + 1;
-		var year = now.getUTCFullYear();
-		var hours = now.getUTCHours();
-		var minutes = now.getUTCMinutes();
-		var seconds = now.getUTCSeconds();
-		var a = Math.floor((14 - month) / 12);
-		var y = year + 4800 - a;
-		var m = month + (12 * a) - 3;
-		var JDN = day + Math.floor(((153 * m) + 2) / 5) + (365 * y) + Math.floor(y / 4) - Math.floor(y / 100) + Math.floor(y / 400) - 32045;
-		var JulianDate = (JDN + ((hours - 12) / 24) + (minutes / 1440) + (seconds / 86400)).toFixed(<?php echo $params->get('precision');?>);
+		const now = new Date();
+		const day = now.getUTCDate();
+		const month = now.getUTCMonth() + 1;
+		const year = now.getUTCFullYear();
+		const hours = now.getUTCHours();
+		const minutes = now.getUTCMinutes();
+		const seconds = now.getUTCSeconds();
+		const a = Math.floor((14 - month) / 12);
+		const y = year + 4800 - a;
+		const m = month + (12 * a) - 3;
+		const JDN = day + Math.floor(((153 * m) + 2) / 5) + (365 * y) + Math.floor(y / 4) - Math.floor(y / 100) + Math.floor(y / 400) - 32045;
+		const JulianDate = (JDN + ((hours - 12) / 24) + (minutes / 1440) + (seconds / 86400)).toFixed(<?php echo $params->get('precision');?>);
 
-		jQuery(".jdate_<?php echo $moduleTitle; ?>").html('<?php echo $preText; ?>' + JulianDate + '<?php echo $postText; ?>');
+	
+document.querySelectorAll('.jdate_<?php echo $moduleTitle; ?>').forEach(el => {
+		el.innerHTML = '<?php echo $preText; ?>' + JulianDate + '<?php echo $postText; ?>';
+	});
 	}
 
-	// Lets call the clock the so display it the first time before the counter starts
+	// Lets call the clock so display it the first time before the counter starts
 	getJulian_<?php echo $moduleTitle; ?>();
 
 	// Update the displayed time after x period
-	jQuery(document).ready(function ()
-	{
+	document.addEventListener('DOMContentLoaded', function () {
 		setInterval(getJulian_<?php echo $moduleTitle; ?>, <?php echo $params->get('updateInterval'); ?>);
 	});
 
