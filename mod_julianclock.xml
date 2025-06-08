@@ -3,7 +3,7 @@
 	<name>Julian Clock</name>
 	<author>N6REJ</author>
 	<creationDate>2025 June 08</creationDate>
-	<copyright>JowWow</copyright>
+	<copyright>Copyright (C)2025 N6REJ</copyright>
 	<license>GNU General Public License v3. https://www.gnu.org/licenses/gpl.html</license>
 	<authorEmail>troy@hallhome.us</authorEmail>
 	<authorUrl>https://hallhome.us</authorUrl>
@@ -12,12 +12,14 @@
 	<files>
 		<filename module="mod_julianclock">mod_julianclock.php</filename>
 		<filename>mod_julianclock.xml</filename>
+		<filename>License.txt</filename>
+		<filename>index.html</filename>
 		<folder>tmpl</folder>
 		<folder>language</folder>
 	</files>
 	<languages>
-		<language tag="en-GB">language/en-GB/en-GB.mod_julianclock.ini</language>
-		<language tag="en-GB">language/en-GB/en-GB.mod_julianclock.sys.ini</language>
+		<language tag="en-GB">language/en-GB/mod_julianclock.ini</language>
+		<language tag="en-GB">language/en-GB/mod_julianclock.sys.ini</language>
 	</languages>
 	<updateservers>
 		<server
@@ -25,7 +27,7 @@
 			name="julianClock"
 			priority="1"
 		>
-			https://raw.githubusercontent.com/N6REJ/mod_julianclock/master/mod_julianclock_update.xml
+			https://raw.githubusercontent.com/N6REJ/mod_julianclock/main/mod_julianclock_update.xml
 		</server>
 	</updateservers>
 	<config>
