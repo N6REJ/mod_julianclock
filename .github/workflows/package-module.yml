@@ -476,7 +476,7 @@ jobs:
         uses: softprops/action-gh-release@v1
         with:
           tag_name: ${{ steps.set_version.outputs.version }}
-          name: Julian Clock ${ { steps.set_version.outputs.version } }
+          name: Julian Clock ${{ steps.set_version.outputs.version }}
           files: |
             package/mod_julianclock_${{ steps.set_version.outputs.version }}.zip
             package/directory-structure.txt

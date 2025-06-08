@@ -73,9 +73,49 @@ document.querySelectorAll('.jdate_<?php echo $moduleTitle; ?>').forEach(el => {
 	// Lets call the clock so display it the first time before the counter starts
 	getJulian_<?php echo $moduleTitle; ?>();
 
-	// Update the displayed time after x period
+	// --- Pause/Resume logic ---
+	let julianClockInterval = null;
+	const updateInterval = <?php echo $params->get('updateInterval'); ?>;
+	const clockSelector = '.jdate_<?php echo $moduleTitle; ?>';
+
+	function startJulianClock() {
+		if (julianClockInterval === null) {
+			julianClockInterval = setInterval(getJulian_<?php echo $moduleTitle; ?>, updateInterval);
+		}
+	}
+
+	function stopJulianClock() {
+		if (julianClockInterval !== null) {
+			clearInterval(julianClockInterval);
+			julianClockInterval = null;
+		}
+	}
+
 	document.addEventListener('DOMContentLoaded', function () {
-		setInterval(getJulian_<?php echo $moduleTitle; ?>, <?php echo $params->get('updateInterval'); ?>);
+		startJulianClock();
+		// Add pause/resume on hover (desktop) and touch (mobile)
+		document.querySelectorAll(clockSelector).forEach(function(el) {
+			// Desktop hover
+			el.addEventListener('mouseenter', stopJulianClock);
+			el.addEventListener('mouseleave', function() {
+				getJulian_<?php echo $moduleTitle; ?>();
+				startJulianClock();
+			});
+			// Mobile touch
+			el.addEventListener('touchstart', function(e) {
+				stopJulianClock();
+				// Prevent scrolling while paused
+				e.preventDefault();
+			}, {passive: false});
+			el.addEventListener('touchend', function() {
+				getJulian_<?php echo $moduleTitle; ?>();
+				startJulianClock();
+			});
+			el.addEventListener('touchcancel', function() {
+				getJulian_<?php echo $moduleTitle; ?>();
+				startJulianClock();
+			});
+		});
 	});
 
 </script>
