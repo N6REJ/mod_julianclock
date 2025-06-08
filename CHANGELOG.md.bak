@@ -5,6 +5,19 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [2025.06.08.2] - 2025-06-08
+
+### Added
+
+* Add pause/resume functionality to Julian Clock on hover and touch interactions ([cfffc71](https://github.com/N6REJ/mod_julianclock/commit/cfffc71))
+* Add language files declaration to Julian Clock module manifest ([69da058](https://github.com/N6REJ/mod_julianclock/commit/69da058))
+
+### Changed
+
+* Merge pull request #13 from N6REJ/issues ([299aef6](https://github.com/N6REJ/mod_julianclock/commit/299aef6))
+* Update version to 2025.06.08.1 for release ([00e58a8](https://github.com/N6REJ/mod_julianclock/commit/00e58a8))
+* Merge pull request #14 from N6REJ/issues ([9e543f8](https://github.com/N6REJ/mod_julianclock/commit/9e543f8))
+
 ## [2025.06.08.1] - 2025-06-08
 
 ### Added
