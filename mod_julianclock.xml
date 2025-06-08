@@ -2,12 +2,12 @@
 <extension type="module" version="5.0" client="site" method="upgrade">
 	<name>Julian Clock</name>
 	<author>N6REJ</author>
-	<creationDate>04-23-2016</creationDate>
+	<creationDate>2025 June 08</creationDate>
 	<copyright>JowWow</copyright>
 	<license>GNU General Public License v3. https://www.gnu.org/licenses/gpl.html</license>
 	<authorEmail>troy@hallhome.us</authorEmail>
 	<authorUrl>https://hallhome.us</authorUrl>
-	<version>2025.06.05.3</version>
+	<version>2025.06.08.1</version>
 	<description>MOD_JULIANCLOCK_XML_DESCRIPTION</description>
 	<files>
 		<filename module="mod_julianclock">mod_julianclock.php</filename>
@@ -15,6 +15,10 @@
 		<folder>tmpl</folder>
 		<folder>language</folder>
 	</files>
+	<languages>
+		<language tag="en-GB">language/en-GB/en-GB.mod_julianclock.ini</language>
+		<language tag="en-GB">language/en-GB/en-GB.mod_julianclock.sys.ini</language>
+	</languages>
 	<updateservers>
 		<server
 			type="extension"
