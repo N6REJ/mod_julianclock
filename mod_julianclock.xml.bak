@@ -7,7 +7,7 @@
 	<license>GNU General Public License v3. https://www.gnu.org/licenses/gpl.html</license>
 	<authorEmail>troy@hallhome.us</authorEmail>
 	<authorUrl>https://hallhome.us</authorUrl>
-	<version>2025.06.08.3</version>
+	<version>2025.06.08.2</version>
 	<description>MOD_JULIANCLOCK_XML_DESCRIPTION</description>
 	<files>
 		<filename module="mod_julianclock">mod_julianclock.php</filename>
