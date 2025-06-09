@@ -5,6 +5,15 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [2025.06.09.2] - 2025-06-09
+
+### Changed
+
+* Improve version generation logic and add Julian Clock language configuration options ([5260847](https://github.com/N6REJ/mod_julianclock/commit/5260847))
+* Merge pull request #15 from N6REJ/versioning ([7a51db6](https://github.com/N6REJ/mod_julianclock/commit/7a51db6))
+* Update version to 2025.06.09.1 for release ([6784fe0](https://github.com/N6REJ/mod_julianclock/commit/6784fe0))
+* Clean up Julian Clock language file formatting and fix typo in fontawesome reference ([76b84e4](https://github.com/N6REJ/mod_julianclock/commit/76b84e4))
+
 ## [2025.06.09.1] - 2025-06-09
 
 ### Changed
