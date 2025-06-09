@@ -8,7 +8,7 @@
 	<authorEmail>troy@hallhome.us</authorEmail>
 	<authorUrl>https://hallhome.us</authorUrl>
 	<version>2025.06.08.3</version>
-	<description>MOD_JULIANCLOCK_XML_DESCRIPTION</description>
+	<description>MOD_JULIANCLOCK_DESC</description>
 	<files>
 		<filename module="mod_julianclock">mod_julianclock.php</filename>
 		<filename>mod_julianclock.xml</filename>
