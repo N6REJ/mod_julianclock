@@ -7,7 +7,7 @@
 	<license>GNU General Public License v3. https://www.gnu.org/licenses/gpl.html</license>
 	<authorEmail>troy@hallhome.us</authorEmail>
 	<authorUrl>https://hallhome.us</authorUrl>
-	<version>2025.06.09.5</version>
+	<version>2025.06.09.6</version>
 	<description>MOD_JULIANCLOCK_DESC</description>
 	<files>
 		<filename module="mod_julianclock">mod_julianclock.php</filename>
@@ -21,15 +21,6 @@
 		<language tag="en-GB">language/en-GB/mod_julianclock.ini</language>
 		<language tag="en-GB">language/en-GB/mod_julianclock.sys.ini</language>
 	</languages>
-	<updateservers>
-		<server
-			type="extension"
-			name="julianClock"
-			priority="1"
-		>
-			https://raw.githubusercontent.com/N6REJ/mod_julianclock/main/mod_julianclock_update.xml
-		</server>
-	</updateservers>
 	<config>
 		<fields name="params">
 			<fieldset name="basic">
@@ -91,4 +82,7 @@
 			</fieldset>
 		</fields>
 	</config>
+	<updateservers>
+		<server type="extension" priority="1" name="Bears Julian Clock Updates">https://raw.githubusercontent.com/N6REJ/mod_julianclock/main/updates.xml</server>
+	</updateservers>
 </extension>
