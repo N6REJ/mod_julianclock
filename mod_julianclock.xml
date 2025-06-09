@@ -21,15 +21,6 @@
 		<language tag="en-GB">language/en-GB/mod_julianclock.ini</language>
 		<language tag="en-GB">language/en-GB/mod_julianclock.sys.ini</language>
 	</languages>
-	<updateservers>
-		<server
-			type="extension"
-			name="julianClock"
-			priority="1"
-		>
-			https://raw.githubusercontent.com/N6REJ/mod_julianclock/main/mod_julianclock_update.xml
-		</server>
-	</updateservers>
 	<config>
 		<fields name="params">
 			<fieldset name="basic">
@@ -91,4 +82,7 @@
 			</fieldset>
 		</fields>
 	</config>
+	<updateservers>
+		<server type="extension" priority="1" name="Bears Julian Clock Updates">https://raw.githubusercontent.com/N6REJ/mod_julianclock/main/updates.xml</server>
+	</updateservers>
 </extension>
