@@ -5,6 +5,19 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [2025.06.09] - 2025-06-09
+
+### Changed
+
+* fixing xml ([9390620](https://github.com/N6REJ/mod_julianclock/commit/9390620))
+* Update Julian Clock module manifest with corrected copyright, file declarations, and language paths ([8db009f](https://github.com/N6REJ/mod_julianclock/commit/8db009f))
+* Reorganize Julian Clock language files to standard en-GB directory structure ([ceec0aa](https://github.com/N6REJ/mod_julianclock/commit/ceec0aa))
+* Update version to 2025.06.08.3, creation date to 2025 June 08, and copyright year to 2025 ([388e526](https://github.com/N6REJ/mod_julianclock/commit/388e526))
+
+### Removed
+
+* Remove detailed XML description from Julian Clock language files and update manifest reference ([141b535](https://github.com/N6REJ/mod_julianclock/commit/141b535))
+
 ## [2025.06.08.3] - 2025-06-08
 
 ### Added
