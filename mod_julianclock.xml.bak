@@ -7,7 +7,7 @@
 	<license>GNU General Public License v3. https://www.gnu.org/licenses/gpl.html</license>
 	<authorEmail>troy@hallhome.us</authorEmail>
 	<authorUrl>https://hallhome.us</authorUrl>
-	<version>2025.06.09.4</version>
+	<version>2025.06.09.5</version>
 	<description>MOD_JULIANCLOCK_DESC</description>
 	<files>
 		<filename module="mod_julianclock">mod_julianclock.php</filename>
@@ -45,7 +45,7 @@
 				<field
 					name="position"
 					type="radio"
-					class="btn-group"
+					class="btn-group btn-group-yesno"
 					default="0"
 					label="MOD_JULIANCLOCK_POSITION_TEXT_LABEL"
 					description="MOD_JULIANCLOCK_POSTION_TEXT_DESC"
