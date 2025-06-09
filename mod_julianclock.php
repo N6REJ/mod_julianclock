@@ -2,7 +2,7 @@
 
 /** 
  * Bears Julian Clock
- * @version 2025.06.09.4
+ * @version 2025.06.09.5
  * @package mod_julianclock
  * @author N6REJ 
  * @email troy@hallhome.us 
