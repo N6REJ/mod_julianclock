@@ -5,6 +5,19 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [2025.06.09.7] - 2025-06-09
+
+### Changed
+
+* Update updates.xml for version 2025.06.09.5 ([b102cef](https://github.com/N6REJ/mod_julianclock/commit/b102cef))
+* Update Julian Clock position field styling to use btn-group-yesno class ([f3c32c3](https://github.com/N6REJ/mod_julianclock/commit/f3c32c3))
+* Merge remote-tracking branch 'origin/main' ([76a18a4](https://github.com/N6REJ/mod_julianclock/commit/76a18a4))
+* Update version to 2025.06.09.6, creation date to 2025 June 09, and copyright year to 2025 ([e35cf3a](https://github.com/N6REJ/mod_julianclock/commit/e35cf3a))
+* Update updates.xml for version 2025.06.09.6 ([28e88d7](https://github.com/N6REJ/mod_julianclock/commit/28e88d7))
+* Update README.md ([2481b94](https://github.com/N6REJ/mod_julianclock/commit/2481b94))
+* Move updateservers section to end of manifest and update server configuration ([59bdbf4](https://github.com/N6REJ/mod_julianclock/commit/59bdbf4))
+* Merge remote-tracking branch 'origin/main' ([1c357ed](https://github.com/N6REJ/mod_julianclock/commit/1c357ed))
+
 ## [2025.06.09.6] - 2025-06-09
 
 ### Changed
