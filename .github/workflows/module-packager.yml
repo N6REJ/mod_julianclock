@@ -32,9 +32,9 @@ on:
 # =============================
 env:
   AUTHOR: "N6REJ"
-  REPO: "N6REJ/mod_bears_aichatbot"
-  MODULE_NAME: "mod_bears_aichatbot"
-  MODULE_XML: "mod_bears_aichatbot.xml"
+  REPO: "N6REJ/mod_julianclock"
+  MODULE_NAME: "mod_julianclock"
+  MODULE_XML: "mod_julianclock.xml"
   COPYRIGHT_HOLDER: "BearLeeAble (N6REJ)"
   COPYRIGHT_START_YEAR: "2025"
   PHP_VERSION: "8.1"
@@ -44,8 +44,8 @@ env:
   LICENSE_FILE: "License.txt"
   FAVICON_FILE: "favicon.ico"
   UPDATES_XML_FILE: "updates.xml"
-  CSS_DIR: "css"
-  JS_DIR: "js"
+  CSS_DIR: ""
+  JS_DIR: ""
   TMPL_DIR: "tmpl"
   LANGUAGE_DIR: "language"
   PACKAGE_DIR: "package"
