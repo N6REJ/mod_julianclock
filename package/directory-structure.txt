@@ -13,10 +13,29 @@ package/mod_julianclock
 ├── mod_julianclock.xml
 ├── mod_julianclock.xml.bak
 ├── package
-│   └── mod_julianclock
+│   ├── directory-structure.txt
+│   ├── mod_julianclock
+│   │   ├── CHANGELOG.md
+│   │   ├── CHANGELOG.md.bak
+│   │   ├── License.txt
+│   │   ├── README.md
+│   │   ├── favicon.ico
+│   │   ├── index.html
+│   │   ├── language
+│   │   │   └── en-GB
+│   │   │       ├── mod_julianclock.ini
+│   │   │       └── mod_julianclock.sys.ini
+│   │   ├── mod_julianclock.php
+│   │   ├── mod_julianclock.xml
+│   │   ├── mod_julianclock.xml.bak
+│   │   ├── tmpl
+│   │   │   ├── default.php
+│   │   │   └── index.html
+│   │   └── updates.xml
+│   └── mod_julianclock_2025.07.18.zip
 ├── tmpl
 │   ├── default.php
 │   └── index.html
 └── updates.xml
 
-6 directories, 14 files
+9 directories, 30 files

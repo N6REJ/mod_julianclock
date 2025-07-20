@@ -1,7 +1,7 @@
 <?php
 /**
  * Bears Julian Clock
- * @version 2025.07.18
+ * @version 2025.07.20
  * @package mod_julianclock
  * @author N6REJ 
  * @email troy@hallhome.us 

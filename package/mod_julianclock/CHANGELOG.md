@@ -5,15 +5,10 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
-## [2025.07.18] - 2025-07-18
+## [2025.07.20] - 2025-07-20
 
 ### Changed
 
-* Update updates.xml for version 2025.06.09.6 ([28e88d7](https://github.com/N6REJ/mod_julianclock/commit/28e88d7))
-* Update README.md ([2481b94](https://github.com/N6REJ/mod_julianclock/commit/2481b94))
-* Move updateservers section to end of manifest and update server configuration ([59bdbf4](https://github.com/N6REJ/mod_julianclock/commit/59bdbf4))
-* Merge remote-tracking branch 'origin/main' ([1c357ed](https://github.com/N6REJ/mod_julianclock/commit/1c357ed))
-* Update version to 2025.06.09.7, creation date to 2025 June 09, and copyright year to 2025 ([8ac1a34](https://github.com/N6REJ/mod_julianclock/commit/8ac1a34))
 * Update updates.xml for version 2025.06.09.7 ([4d72b33](https://github.com/N6REJ/mod_julianclock/commit/4d72b33))
 * Update README.md ([503e608](https://github.com/N6REJ/mod_julianclock/commit/503e608))
 * Update GitHub Actions workflow to use universal Joomla module packaging with environment variables ([77b8992](https://github.com/N6REJ/mod_julianclock/commit/77b8992))
@@ -27,4 +22,6 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 * Update module-packager.yml ([6858eab](https://github.com/N6REJ/mod_julianclock/commit/6858eab))
 * Update module-packager.yml ([9f9aab4](https://github.com/N6REJ/mod_julianclock/commit/9f9aab4))
 * Update module-packager.yml ([5702299](https://github.com/N6REJ/mod_julianclock/commit/5702299))
+* Update version to 2025.07.18 [skip ci] ([23cc38d](https://github.com/N6REJ/mod_julianclock/commit/23cc38d))
+* Update module-packager.yml ([83f1cc3](https://github.com/N6REJ/mod_julianclock/commit/83f1cc3))
 
