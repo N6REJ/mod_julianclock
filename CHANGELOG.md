@@ -1,4 +1,8 @@
-# Changelog
+## [2025.07.20.1] - 2025-07-20
+
+*   Update module-packager.yml (32cc0bd)
+*   Update version to 2025.07.20 [skip ci] (bbb32a0)
+
 
 All notable changes to this project will be documented in this file.
 
