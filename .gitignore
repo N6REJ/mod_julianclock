@@ -22,3 +22,8 @@
 
 # Marketplace (JED) description - kept locally, not part of the package
 /docs/marketplace-description.html
+
+# Packager build output - never commit these
+/package/
+/directory-structure.txt
+*.bak
