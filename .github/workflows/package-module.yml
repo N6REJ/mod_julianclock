@@ -1,4 +1,4 @@
-name: Package and Release Bears Julian Clock Module
+name: package-packager
 
 on:
   pull_request:
