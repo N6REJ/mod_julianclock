@@ -19,3 +19,6 @@
 
 # Exempt bin since its for temp use only.
 /bin/
+
+# Marketplace (JED) description - kept locally, not part of the package
+/docs/marketplace-description.html
