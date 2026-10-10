@@ -1,12 +1,12 @@
 <?php
 /**
  * Bears Julian Clock
- * @version 2025.06.09.7
+ * @version 2025.07.20
  * @package mod_julianclock
  * @author N6REJ 
  * @email troy@hallhome.us 
  * @website https://www.hallhome.us 
- * @copyright Copyright (c) 2025 N6REJ 
+ * @copyright Copyright (C) 2025 Troy Hall (N6REJ)
  * @license GNU General Public License version 3 or later; see LICENSE.txt 
  * @since 2025.5.10
  *

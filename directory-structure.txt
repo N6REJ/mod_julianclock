@@ -1,0 +1,20 @@
+/home/runner/work/_temp/joomla-build-mod_julianclock-2025.07.20.1
+├── CHANGELOG.md
+├── License.txt
+├── README.md
+├── directory-structure.txt
+├── favicon.ico
+├── index.html
+├── language
+│   └── en-GB
+│       ├── mod_julianclock.ini
+│       └── mod_julianclock.sys.ini
+├── mod_julianclock.php
+├── mod_julianclock.xml
+├── mod_julianclock_2025.07.20.1.zip
+├── tmpl
+│   ├── default.php
+│   └── index.html
+└── updates.xml
+
+4 directories, 14 files
