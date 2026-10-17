@@ -14,7 +14,6 @@
  */
 defined('_JEXEC') or die('Direct Access to this location is not allowed.');
 
-// Joomla 4+: Use $displayData['module'] and $displayData['params']
 $module = $displayData['module'];
 $params = $displayData['params'];
 /** @var Joomla\CMS\Module\Module $module */

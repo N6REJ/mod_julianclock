@@ -1,6 +1,6 @@
 JulianClock
 ========
-A live-clock based on Javascript & php for Joomla 4, 5 & 6.
+A live clock based on JavaScript and PHP for Joomla 5 and 6.
 With up to 10 digit decimal display!
 Source Time is fixed on UTC
 deltaT is not utilized in this clock
