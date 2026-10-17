@@ -5,7 +5,7 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
-## [2026.10.16] - 2026-10-16
+## [2026.10.17] - 2026-10-17
 
 ### Added
 
@@ -13,10 +13,6 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Changed
 
-* Migrate to centralized Joomla Extension Packager action and update build configuration ([0163521](https://github.com/N6REJ/mod_julianclock/commit/0163521))
-* Merge remote-tracking branch 'origin/main' ([a7a223e](https://github.com/N6REJ/mod_julianclock/commit/a7a223e))
-* Update updates.xml for version 2026.10.10.1 ([23aa6e6](https://github.com/N6REJ/mod_julianclock/commit/23aa6e6))
-* Merge remote-tracking branch 'origin/main' ([ffe912d](https://github.com/N6REJ/mod_julianclock/commit/ffe912d))
 * Update version to 2026.10.10.2 [skip ci] ([107489f](https://github.com/N6REJ/mod_julianclock/commit/107489f))
 * Update stats downloads snapshot [skip ci] ([35b6893](https://github.com/N6REJ/mod_julianclock/commit/35b6893))
 * Merge pull request #18 from N6REJ/update-stats ([32c46d9](https://github.com/N6REJ/mod_julianclock/commit/32c46d9))
@@ -43,8 +39,6 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 * Update stats downloads snapshot [skip ci] ([b8b0985](https://github.com/N6REJ/mod_julianclock/commit/b8b0985))
 * ci: update package workflow to use joomla-packager 2026.10.16 with enhanced feed matching ([07097bc](https://github.com/N6REJ/mod_julianclock/commit/07097bc))
 * Merge remote-tracking branch 'origin/main' ([485ede0](https://github.com/N6REJ/mod_julianclock/commit/485ede0))
-
-### Removed
-
-* Remove leftover CHANGELOG.md.bak build artifact ([ef6611e](https://github.com/N6REJ/mod_julianclock/commit/ef6611e))
+* Update version to 2026.10.16 [skip ci] ([11a5bcc](https://github.com/N6REJ/mod_julianclock/commit/11a5bcc))
+* Use Joomla Packager with release ZIP checksums ([96c12cd](https://github.com/N6REJ/mod_julianclock/commit/96c12cd))
 
