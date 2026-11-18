@@ -3,12 +3,12 @@
   "owner": "N6REJ",
   "repo": "mod_julianclock",
   "visibility": "public",
-  "generatedAt": "2026-11-17T15:49:16.885Z",
+  "generatedAt": "2026-11-18T15:28:48.947Z",
   "stats": {
     "total": 315,
     "day": 0,
     "week": 0,
-    "month": 137
+    "month": 136
   },
   "partial": {
     "day": false,
@@ -17,9 +17,9 @@
   },
   "snapshots": {
     "windowDays": 180,
-    "count": 39,
+    "count": 40,
     "firstDate": "2026-10-10",
-    "lastDate": "2026-11-17",
+    "lastDate": "2026-11-18",
     "series": {
       "2026-10-10": 165,
       "2026-10-11": 165,
@@ -59,7 +59,8 @@
       "2026-11-14": 315,
       "2026-11-15": 315,
       "2026-11-16": 315,
-      "2026-11-17": 315
+      "2026-11-17": 315,
+      "2026-11-18": 315
     }
   },
   "profile": {
